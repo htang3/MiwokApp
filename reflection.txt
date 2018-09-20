@@ -1,0 +1,7 @@
+Lesson: Images and Visual Polish
+Can you think of how you can apply the skills you learned in this lesson?
+three things I learned: Adding image, we need to modify WordAdapter to display image.
+decide if image should appear or not.
+Second I learned Adding multiple constructor, one can display 3 attributes, and one display 2 atttributes
+I added boolean to decide hasImage or not.
+Lastly, different background color for each activity.
