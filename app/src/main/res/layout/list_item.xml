@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/tan_background"
     android:minHeight="@dimen/list_item_height"
-    android:orientation="horizontal"
-    android:background="@color/tan_background">
+    android:orientation="horizontal">
 
 
     <ImageView
@@ -14,41 +13,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="imageicon"
-        android:minWidth="@dimen/image_item_height"
-         />
+        android:minWidth="@dimen/image_item_height" />
 
-    <LinearLayout
+
+    <RelativeLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-        >
+        android:paddingLeft="16dp">
 
         <TextView
             android:id="@+id/miwok_word"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:gravity="bottom"
             android:textAppearance="@android:style/TextAppearance.Medium"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:gravity="bottom"
             tools:text="Lutti" />
 
         <TextView
             android:id="@+id/English_word"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/miwok_word"
+            android:gravity="top"
             android:textAppearance="@android:style/TextAppearance.Medium"
             android:textColor="@android:color/white"
-            android:gravity="top"
             tools:text="One" />
 
+        <!--<ImageButton-->
+            <!--android:id="@+id/play_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/baseline_play_arrow_white_18dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--/>-->
 
-    </LinearLayout>
+
+    </RelativeLayout>
+
 
 </LinearLayout>
 
